@@ -1,3 +1,5 @@
+import { Suspense, type CSSProperties } from "react";
+
 import { SiteHeader } from "@/components/dashboard/blocks/header/site-header";
 
 import { AppSidebar } from "@/components/dashboard/blocks/sidebar/app-sidebar";
@@ -15,7 +17,7 @@ export default function Page() {
         {
           "--sidebar-width": "calc(var(--spacing) * 72)",
           "--header-height": "calc(var(--spacing) * 12)",
-        } as React.CSSProperties
+        } as CSSProperties
       }
     >
       <AppSidebar variant="inset" />
@@ -28,7 +30,15 @@ export default function Page() {
               <div className="px-4 lg:px-6">
                 <ChartAreaInteractive />
               </div>
-              <DataTable data={data} />
+              <Suspense
+                fallback={
+                  <div className="px-4 lg:px-6">
+                    <div className="h-72 animate-pulse rounded-lg border border-dashed" />
+                  </div>
+                }
+              >
+                <DataTable data={data} />
+              </Suspense>
             </div>
           </div>
         </div>

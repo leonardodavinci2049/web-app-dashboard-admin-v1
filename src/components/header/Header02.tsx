@@ -15,7 +15,7 @@ import { cn } from "@/lib/utils";
 import ModeToggle from "../theme/mode-toggle";
 
 const TopMenu = [
-  { id: "features", name: "Features", href: "#features" },
+  { id: "dashboard", name: "Dashboard", href: "/dashboard" },
   { id: "pricing", name: "Pricing", href: "#pricing" },
   { id: "faq", name: "FAQ", href: "#faq" },
 ];
@@ -40,7 +40,7 @@ export default function Header02() {
   return (
     <header className="sticky top-5 z-50 w-full">
       <div className="container mx-auto px-4">
-        <div className="border rounded-md w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 py-1 px-4">
+        <div className="border rounded-md w-full bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60 py-1 px-4">
           <nav className="hidden justify-between md:flex">
             <div className="flex items-center gap-6">
               <Logo />
