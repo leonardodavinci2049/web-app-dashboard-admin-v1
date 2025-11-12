@@ -4,9 +4,9 @@ import { SidebarTrigger } from "@/components/ui/sidebar";
 
 const data = {
   user: {
-    name: "shadcn",
+    name: "User Name",
     email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
+    avatar: "/avatars/avatar.jpg",
   },
 };
 
