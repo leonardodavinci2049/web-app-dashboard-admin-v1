@@ -1,4 +1,4 @@
-import { Suspense, type CSSProperties } from "react";
+import { type CSSProperties, Suspense } from "react";
 
 import { SiteHeader } from "@/components/dashboard/blocks/header/site-header";
 
