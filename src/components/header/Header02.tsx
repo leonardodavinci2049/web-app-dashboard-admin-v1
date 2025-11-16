@@ -15,7 +15,6 @@ import { cn } from "@/lib/utils";
 import ModeToggle from "../theme/mode-toggle";
 
 const TopMenu = [
-  { id: "dashboard", name: "Dashboard", href: "/dashboard" },
   { id: "pricing", name: "Pricing", href: "#pricing" },
   { id: "faq", name: "FAQ", href: "#faq" },
 ];
@@ -30,7 +29,7 @@ const Logo = () => {
           width={24}
           height={24}
         />
-        PROCEDURES
+        SAAS
       </h1>
     </Link>
   );
@@ -65,10 +64,10 @@ export default function Header02() {
               </Suspense>
               <div className="flex gap-2">
                 <Link
-                  href="/test-procedure"
+                  href="/dashboard"
                   className={buttonVariants({ variant: "default" })}
                 >
-                  Test Procedures
+                  Dashboard
                 </Link>
               </div>
             </div>
