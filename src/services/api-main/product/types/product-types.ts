@@ -29,7 +29,7 @@ export interface MySQLMetadata {
 }
 
 /**
- * Estrutura padrão de retorno das stored procedures
+ * Estrutura padrão de retorno das stored procedures por meio da API REST
  */
 export interface StoredProcedureResponse {
   sp_return_id: number;
