@@ -42,6 +42,8 @@ next-env.d.ts
 
 
 # others
+tasks
+/tasks
 /docs
 tasks-project-next.md
 ecosystem.config.js
